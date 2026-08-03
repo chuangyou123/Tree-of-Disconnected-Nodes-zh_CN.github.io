@@ -1,0 +1,41 @@
+/* 全局设置 */
+body {
+	color: var(--color);
+	overflow: hidden;
+	--background: #0f0f0f;
+	--color: #dfdfdf;
+	--points: #ffffff;
+	background: var(--background)
+}
+
+/* 通用文本 */
+h1, h2, h3, b, input {
+	display: inline;
+	font-family: "Lucida Console", "Courier New", monospace
+}
+
+/* 这些是组件不同状态的样式。你可以使用 .c.locked 等来制作特定层的版本 */
+.locked {
+	background-color: #bf8f8f;
+	cursor: not-allowed;
+}
+
+/* Can 表示可以点击/购买等 */
+.can {
+	cursor: pointer;
+}
+
+.can:hover {
+	transform: scale(1.15, 1.15);
+	box-shadow: 0 0 20px var(--points)
+}
+
+.bought {
+	background-color: #77bf5f;
+	cursor: default;
+}
+
+#points {
+	color: var(--points);
+	text-shadow: 0 0 10px var(--points);
+}
